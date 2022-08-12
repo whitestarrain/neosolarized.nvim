@@ -25,9 +25,11 @@ function M.setup(opts)
         if defaults[k] == nil then print("neosolarized: unknown setting: ", k) end
     end
 
+    --[[
     cmd([[
         packadd! colorbuddy.nvim
     ]])
+    ]]
 
     -- only needed to clear when not the default colorscheme
     if vim.g.colors_name then
